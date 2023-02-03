@@ -1,0 +1,31 @@
+//colors
+$firstColor: #86B627;
+$secondColor: #B2D490;
+$thirdColor: #777D71;
+$fourthColor: #BCBBB5;
+$fifthColor: #E4E4E2;
+$sixthColor: #FAF9F8;
+$seventhColor: #FFFFFF;
+
+
+
+:export {
+    firstColor: $firstColor;
+    secondColor: $secondColor;
+    thirdColor: $thirdColor;
+    fourthColor: $fourthColor;
+    fifthColor: $fifthColor;
+    sixthColor: $sixthColor;
+    seventhColor: $seventhColor;
+}
+
+//breakpoints
+$tablets: 768px;
+$phones: 480px;
+
+//fonts
+$baseFontSize: 14px;
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@300;400;500;700;800&display=swap');
+
+//setups
+@import "./media.scss";

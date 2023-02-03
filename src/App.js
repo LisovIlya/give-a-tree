@@ -1,25 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import { Main, Catalog } from './Pages';
+import { Header } from './Components';
+import { Routes, Route } from 'react-router-dom';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    const routes = {
+        main: '/give-a-tree/dist/',
+        catalog: '/give-a-tree/dist/catalog',
+    };
+    return (
+        <div className="App">
+            <Header />
+            <Routes>
+                <Route exact path={routes.main} element={<Main />} />
+                <Route exact path={routes.catalog} element={<Catalog />} />
+            </Routes>
+            <div>App-page</div>
+        </div>
+    );
 }
 
 export default App;
