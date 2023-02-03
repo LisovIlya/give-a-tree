@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/give-a-tree/dist/static/css/main.1049610b.css",
-    "main.js": "/give-a-tree/dist/static/js/main.0b919a17.js",
+    "main.css": "/give-a-tree/dist/static/css/main.cc2bd44b.css",
+    "main.js": "/give-a-tree/dist/static/js/main.22b28244.js",
     "static/js/787.c3247df6.chunk.js": "/give-a-tree/dist/static/js/787.c3247df6.chunk.js",
     "index.html": "/give-a-tree/dist/index.html",
-    "main.1049610b.css.map": "/give-a-tree/dist/static/css/main.1049610b.css.map",
-    "main.0b919a17.js.map": "/give-a-tree/dist/static/js/main.0b919a17.js.map",
+    "main.cc2bd44b.css.map": "/give-a-tree/dist/static/css/main.cc2bd44b.css.map",
+    "main.22b28244.js.map": "/give-a-tree/dist/static/js/main.22b28244.js.map",
     "787.c3247df6.chunk.js.map": "/give-a-tree/dist/static/js/787.c3247df6.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.1049610b.css",
-    "static/js/main.0b919a17.js"
+    "static/css/main.cc2bd44b.css",
+    "static/js/main.22b28244.js"
   ]
 }
