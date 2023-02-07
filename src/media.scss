@@ -2,14 +2,27 @@
     @return calc($px / $baseFontSize) + 0rem;
 }
 
-@mixin tablets {
-    @media screen and (max-width:$tablets) {
+
+@mixin desktop1440 {
+    @media screen and (max-width:$desktop1440) {
         @content;
     }
 }
 
-@mixin phones {
-    @media screen and (max-width:$phones) {
+@mixin desktop960 {
+    @media screen and (max-width:$desktop960) {
+        @content;
+    }
+}
+
+@mixin tablets760 {
+    @media screen and (max-width:$tablets760) {
+        @content;
+    }
+}
+
+@mixin phones480 {
+    @media screen and (max-width:$phones480) {
         @content;
     }
 }

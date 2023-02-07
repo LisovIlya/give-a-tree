@@ -1,28 +1,38 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import styles from './style.module.scss';
 import { NavLink } from 'react-router-dom';
 
-function Switch() {
-    const [togglePosition, setTogglePosition] = useState('left')
-    console.log(togglePosition)
+function Switch(events) {
 
-    const routes = {
-        main: '/give-a-tree/dist/',
-        catalog: '/give-a-tree/dist/catalog',
-    };
+    const [togglePosition, setTogglePosition] = useState('')
+
+    const publicURL = process.env.PUBLIC_URL
+
+    useEffect(() => {
+        const currentURL = window.location.pathname
+        const publicURL = process.env.PUBLIC_URL
+        if(currentURL === `${publicURL}/`) {
+            setTogglePosition('left')
+        }
+        if(currentURL === `${publicURL}/catalog`) {
+            setTogglePosition('right')
+        }
+    }, [])
+
+
     return (
         <div className={styles.wrapper}>
             <div className={styles.navList}>
                 <NavLink
                     onClick={() => setTogglePosition('left')}
-                    to={routes.main}
+                    to={`${publicURL}/`}
                     className={({isActive}) => isActive ? `${styles.navItem} ${styles.active}` : styles.navItem}
                 >
                     <div className={styles.textItem}>Главная</div>
                 </NavLink>
                 <NavLink
                     onClick={() => setTogglePosition('right')}
-                    to={routes.catalog} 
+                    to={`${publicURL}/catalog`} 
                     className={({isActive}) => isActive ? `${styles.navItem} ${styles.active}` : styles.navItem}
                 >
                     <div className={styles.textItem}>Каталог</div>

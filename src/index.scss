@@ -6,23 +6,13 @@ body {
     margin: 0;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-
-    @include tablets {
-        font-size: $baseFontSize - 1px;
-        // font-size: 2.34375vmin;
-    }
-
-    @include phones {
-        font-size: $baseFontSize - 2px;
-        // font-size: 3.75vmin;
-    }
 }
 
 *   {
     box-sizing: border-box;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6, p {
     margin: 0;
 }
 

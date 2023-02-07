@@ -46,41 +46,18 @@
     border-radius: rem(20px);
     top: 0;
     height: 100%;
-    left: 0;
-    width: 50%;
     background: $firstColor;
-    // transition: left 1s;
-
+    
     &.left {
-        animation: switch-left 1s;
+        transition: left .5s, right .5s .5s;
         left: 0;
+        right: 50%;
     }
 
     &.right {
-        animation: switch-right 1s;
+        transition: left .5s .5s, right .5s;
         left: 50%;
-    }
-}
-
-@keyframes switch-left {
-    0% {
-        left: 50%;
-    }
-
-    50% {
-        left: 0;
-        width: 100%;
-    }
-}
-
-@keyframes switch-right {
-    0% {
-        left: 0;
-    }
-
-    50% {
-        left: 0;
-        width: 100%;
+        right: 0;
     }
 }
 
