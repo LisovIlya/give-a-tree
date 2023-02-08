@@ -7,7 +7,22 @@ $fifthColor: #E4E4E2;
 $sixthColor: #FAF9F8;
 $seventhColor: #FFFFFF;
 
+//breakpoints
+$desktop1440: 1440px;
+$desktop960: 960px;
+$tablets760: 760px;
+$phones480: 480px;
 
+//fonts
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@300;400;500;700;800&display=swap');
+
+$baseFontSize: 14px;
+$commonFontSize: 20px;
+$middleFontSize: 32px;
+$titleFontSize: 48px;
+
+//setups
+@import "./media.scss";
 
 :export {
     firstColor: $firstColor;
@@ -17,17 +32,9 @@ $seventhColor: #FFFFFF;
     fifthColor: $fifthColor;
     sixthColor: $sixthColor;
     seventhColor: $seventhColor;
+
+    baseFontSize: $baseFontSize;
+    commonFontSize: $commonFontSize;
+    middleFontSize: $middleFontSize;
+    titleFontSize: $titleFontSize;
 }
-
-//breakpoints
-$desktop1440: 1440px;
-$desktop960: 960px;
-$tablets760: 760px;
-$phones480: 480px;
-
-//fonts
-$baseFontSize: 14px;
-@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@300;400;500;700;800&display=swap');
-
-//setups
-@import "./media.scss";

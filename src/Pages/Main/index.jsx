@@ -1,14 +1,19 @@
 import React from 'react';
 import styles from './style.module.scss';
-import TreeBackground from '../../images/TreeBackground.svg'
+import {Svg} from '../../Components'
+import variables from '../../main.scss'
 
 
 
 function Main(events) {
+
+
   return (
     <div className={styles.wrapper}>
         <section className={styles.section}>
-          <img src={TreeBackground} alt="tree" className={styles.treeBackground} />
+          <div className={styles.treeBackground}>
+            <Svg icon="tree" height="140" units="vh" stroke={variables.sixthColor} strokeWidth="20"/>
+          </div>
           <div className={styles.container}>
             <div className={styles.description}>
               <h1 className={styles.title}>Подари дерево</h1>
