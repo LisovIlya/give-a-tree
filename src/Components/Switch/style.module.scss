@@ -26,10 +26,10 @@
     justify-content: center;
     width: 50%;
     color: $thirdColor;
-    transition: color .5s .5s;
+    transition: color .2s .2s;
     
     &.active {
-        transition: color .5s;
+        transition: color .2s;
         color: $seventhColor;
         pointer-events: none;
     }
@@ -49,13 +49,13 @@
     background: $firstColor;
     
     &.left {
-        transition: left .5s, right .5s .5s;
+        transition: left .2s, right .2s .2s;
         left: 0;
         right: 50%;
     }
 
     &.right {
-        transition: left .5s .5s, right .5s;
+        transition: left .2s .2s, right .2s;
         left: 50%;
         right: 0;
     }

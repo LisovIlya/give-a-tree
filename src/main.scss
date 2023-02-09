@@ -21,6 +21,11 @@ $commonFontSize: 20px;
 $middleFontSize: 32px;
 $titleFontSize: 48px;
 
+//indentation
+$headerHeight: 80px;
+$desctop1Indentation: 80px;
+$desctop2Indentation: 40px;
+
 //setups
 @import "./media.scss";
 
@@ -37,4 +42,9 @@ $titleFontSize: 48px;
     commonFontSize: $commonFontSize;
     middleFontSize: $middleFontSize;
     titleFontSize: $titleFontSize;
+
+    headerHeight: $headerHeight;
+
+    desctop1Indentation: $desctop1Indentation;
+    desctop2Indentation: $desctop2Indentation;
 }
