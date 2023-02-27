@@ -6,9 +6,8 @@
     z-index: 1000;
     width: 100%;
     height: 80px;
-    border-bottom: 1px solid $fifthColor;
-    background: rgba(255, 255, 255, 0.6);
-    backdrop-filter: blur(7.5px);
+    border-bottom: 1px solid $grey;
+    background-color: $lightGray;
     user-select: none;
 }
 
@@ -25,10 +24,15 @@
 }
 
 .logo {
+    display: flex;
     font-size: $middleFontSize;
     font-weight: 800;
-    color: $firstColor;
+    color: $graphite;
     cursor: pointer;
+}
+
+.lastPartLogo {
+    color: $dominant;
 }
 
 .navigation {

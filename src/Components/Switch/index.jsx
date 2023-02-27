@@ -4,7 +4,7 @@ import { NavLink } from 'react-router-dom';
 
 function Switch(events) {
 
-    const [togglePosition, setTogglePosition] = useState('')
+    const [togglePosition, setTogglePosition] = useState('left')
 
     const publicURL = process.env.PUBLIC_URL
 

@@ -12,7 +12,10 @@ function Header() {
     return (
         <div className={styles.wrapper}>
             <div className={styles.container}>
-                <div className={styles.logo}>Give a tree</div>
+                <div className={styles.logo}>
+                    <div className={styles.firstPartLogo}>Give a&nbsp;</div>
+                    <div className={styles.lastPartLogo}>tree</div>
+                </div>
                 <Switch />
                 <div className={styles.navigation}>
                     <NavIcon type={navigation.user} />

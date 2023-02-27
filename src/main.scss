@@ -1,11 +1,11 @@
 //colors
-$firstColor: #86B627;
-$secondColor: #B2D490;
-$thirdColor: #777D71;
-$fourthColor: #BCBBB5;
-$fifthColor: #E4E4E2;
-$sixthColor: #FAF9F8;
-$seventhColor: #FFFFFF;
+$dominant: #508F00;
+$graphite: #484848;
+$darkGrey: #A1A1A1;
+$grey: #EEEDED;
+$lightGray: #F9F9F9;
+$white: #FFFFFF;
+$yellow: #FFB800;
 
 //breakpoints
 $desktop1440: 1440px;
@@ -30,13 +30,13 @@ $desctop2Indentation: 40px;
 @import "./media.scss";
 
 :export {
-    firstColor: $firstColor;
-    secondColor: $secondColor;
-    thirdColor: $thirdColor;
-    fourthColor: $fourthColor;
-    fifthColor: $fifthColor;
-    sixthColor: $sixthColor;
-    seventhColor: $seventhColor;
+    dominant: $dominant;
+    graphite: $graphite;
+    darkGrey: $darkGrey;
+    grey: $grey;
+    lightGray: $lightGray;
+    white: $white;
+    yellow: $yellow;
 
     baseFontSize: $baseFontSize;
     commonFontSize: $commonFontSize;
