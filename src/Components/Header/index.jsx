@@ -1,12 +1,12 @@
 import React from 'react';
 import styles from './style.module.scss';
-import {Switch, NavIcon} from '../../Components'
+import {Switch, NavIcon, User} from '../../Components'
 
 function Header() {
 
     const navigation = {
-        user: 'user',
-        basket: 'basket'
+        basket: 'basket',
+        like: 'like'
     }
 
     return (
@@ -17,9 +17,12 @@ function Header() {
                     <div className={styles.lastPartLogo}>tree</div>
                 </div>
                 <Switch />
-                <div className={styles.navigation}>
-                    <NavIcon type={navigation.user} />
-                    <NavIcon type={navigation.basket} />
+                <div className={styles.right}>
+                    <div className={styles.navigation}>
+                        <NavIcon type={navigation.like} />
+                        <NavIcon type={navigation.basket} />
+                    </div>
+                    <User />
                 </div>
             </div>
         </div>

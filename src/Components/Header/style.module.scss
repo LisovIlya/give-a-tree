@@ -35,6 +35,12 @@
     color: $dominant;
 }
 
+.right {
+    display: flex;
+    align-items: center;
+}
+
 .navigation {
     display: flex;
+    margin-right: 14px;
 }

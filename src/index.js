@@ -4,19 +4,9 @@ import './index.scss';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter } from 'react-router-dom';
-// import { Provider } from 'react-redux';
-// import variables from './main.scss'
-// import { ThemeProvider } from '@mui/material/styles';
-// import { createTheme } from '@mui/system';
+import { ThemeProvider } from '@mui/material/styles';
+import theme from './muiTheme';
 
-// const muiTheme = createTheme({
-//     overrides: {
-//         MuiSlider: {
-//             track: {backgroundColor: '#508F00'},
-//             thumb: {backgroundColor: '#508F00'}
-//         }
-//     }
-// })
 
 const rootElement = document.getElementById('root')
 const root = createRoot(rootElement)
@@ -24,9 +14,9 @@ const root = createRoot(rootElement)
 root.render(
     <React.StrictMode>
         <BrowserRouter>
+            <ThemeProvider theme={theme}>
                 <App />
-            {/* <ThemeProvider theme={muiTheme}>
-            </ThemeProvider> */}
+            </ThemeProvider>
         </BrowserRouter>
     </React.StrictMode>
 );
