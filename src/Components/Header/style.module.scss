@@ -9,6 +9,12 @@
     border-bottom: 1px solid $grey;
     background-color: $lightGray;
     user-select: none;
+
+    @include tablets740 {
+        top: auto;
+        bottom: 0;
+        border-top: 1px solid $grey;
+    }
 }
 
 .container {
@@ -21,26 +27,37 @@
     @include desktop1440 {
         margin: 0 40px;
     }
+
+    @include tablets740 {
+        justify-content: center;
+        margin: 0 15px;
+    }
 }
 
 .logo {
     display: flex;
     font-size: $middleFontSize;
     font-weight: 800;
-    color: $graphite;
-    cursor: pointer;
-}
-
-.lastPartLogo {
     color: $dominant;
-}
+    cursor: pointer;
 
-.right {
-    display: flex;
-    align-items: center;
+    @include tablets740 {
+        display: none;
+    }
 }
 
 .navigation {
     display: flex;
-    margin-right: 14px;
+    justify-content: space-between;
+    align-items: center;
+    width: 150px;
+    stroke-width: 2;
+    
+    
+    @include tablets740 {
+        flex: 1;
+        max-width: 500px;
+        min-width: 290px;
+        margin: 0;
+    }
 }

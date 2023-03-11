@@ -32,20 +32,7 @@ function Catalog() {
             <Sort title='Популярности'/>
           </div>
         </div>
-        <div className={styles.list}>
-          <Item />
-          <Item />
-          <Item />
-          <Item />
-          <Item />
-          <Item />
-          <Item />
-          <Item />
-          <Item />
-          <Item />
-          <Item />
-          <Item />
-          <Item />
+        <div className={styles.list}>{Array(10).fill(1).map((el, i) => <Item key={i}/>)}
         </div>
       </div>
     </div>

@@ -1,28 +1,20 @@
 import React from 'react';
 import styles from './style.module.scss';
-import {Switch, NavIcon, User} from '../../Components'
+import {Switch, NavIcon} from '../../Components'
 
 function Header() {
-
-    const navigation = {
-        basket: 'basket',
-        like: 'like'
-    }
 
     return (
         <div className={styles.wrapper}>
             <div className={styles.container}>
-                <div className={styles.logo}>
-                    <div className={styles.firstPartLogo}>Give a&nbsp;</div>
-                    <div className={styles.lastPartLogo}>tree</div>
-                </div>
+                <div className={styles.logo}>Gardener</div>
                 <Switch />
-                <div className={styles.right}>
-                    <div className={styles.navigation}>
-                        <NavIcon type={navigation.like} />
-                        <NavIcon type={navigation.basket} />
-                    </div>
-                    <User />
+                <div className={styles.navigation}>
+                    <NavIcon type='home' />
+                    <NavIcon type='search' />
+                    <NavIcon type='like' />
+                    <NavIcon type='basket' />
+                    <NavIcon type='user' />
                 </div>
             </div>
         </div>

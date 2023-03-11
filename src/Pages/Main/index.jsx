@@ -1,7 +1,6 @@
 import React from 'react';
 import styles from './style.module.scss';
 import {Svg} from '../../Components'
-import variables from '../../main.scss'
 
 
 
@@ -12,7 +11,7 @@ function Main(events) {
     <div className={styles.wrapper}>
         <section className={styles.section}>
           <div className={styles.treeBackground}>
-            <Svg icon="tree" height="140" units="vh" stroke={variables.grey} strokeWidth="20"/>
+            <Svg icon="tree"/>
           </div>
           <div className={styles.container}>
             <div className={styles.description}>
